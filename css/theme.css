@@ -1,6 +1,7 @@
 ﻿:root {
   --primary-color: #a53692;
   --primary-color-transparent: rgba(165, 54, 146, 0.5);
+  --menu-button: rgba(0, 0, 0, 0.507);
 }
 .left-to-right-bg {
   /* backdrop-filter: blur(2px); */
@@ -1226,7 +1227,10 @@ nav .navigation-main .navbar-dropdown .navbar-box ul > li:last-child > a {
 @media (max-width: 991px) {
   nav.navbar-fixed {
     position: absolute;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .open-menu {
+    background-color: var(--menu-button);
   }
   nav.navbar-single-page {
     position: fixed !important;
